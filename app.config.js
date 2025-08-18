@@ -11,8 +11,12 @@ export default ({ config }) => ({
     orientation: "portrait",
     android: {
       package: 'com.xvalhk.kcalculate',
-    },
+      adaptiveIcon: {
+        foregroundImage: "./assets/icon.png",
+        backgroundColor: "#10b77f"           
+      }
 
+    },
     extra: {
       eas: {
         projectId: "61dd7fa9-1722-4e48-8c26-da3cc237ad60"
