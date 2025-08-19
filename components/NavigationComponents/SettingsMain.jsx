@@ -1,11 +1,10 @@
 import { ScrollView, StatusBar, StyleSheet, Text, TouchableOpacity, View } from 'react-native'
-import React, { useContext } from 'react'
+import { useContext } from 'react'
 import { Icon } from 'react-native-paper';
 import { SafeAreaView } from 'react-native-safe-area-context';
 import { AppContext } from '../AppContext';
 import { signOut } from 'firebase/auth';
 import { auth } from '../../firebase';
-import { saveToAsyncStorage } from '../../asyncStorage';
 
 const SettingsMain = ({ navigation }) => {
 	const { user, setSkippedAuth } = useContext(AppContext);
