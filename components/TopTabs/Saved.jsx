@@ -74,8 +74,8 @@ const Saved = () => {
     return savedMeals.map((meal, mealIndex) => (
       <View key={mealIndex} style={{ margin: 20, backgroundColor: "#fefefe", borderRadius: 10, padding: 20, elevation: 3 }}>
         <View style={{ flexDirection: "row", justifyContent: "space-between" }}>
-          <Text style={{ fontSize: 20, fontWeight: 600 }}> {meal.mealName}</Text>
-          <TouchableOpacity style={{ borderWidth: 1, padding: 10, borderColor: "#e5e5e5", backgroundColor: "#f9fafb", borderRadius: 5 }}
+          <Text style={{ fontSize: 16, fontWeight: 600 }}> {meal.mealName}</Text>
+          <TouchableOpacity style={{ borderWidth: 1, padding: 5, borderColor: "#e5e5e5", backgroundColor: "#f9fafb", borderRadius: 5 }}
             onPress={() => handleDelete(mealIndex)}>
             <Icon color='red' size={20} source={"delete-outline"} />
           </TouchableOpacity>
@@ -94,7 +94,7 @@ const Saved = () => {
             <Text style={styles.nutritionText} >{meal.fats}g Fats</Text>
           </View>
         </View>
-        <Text style={{ color: "#475569", marginTop: 20, fontWeight: 600, fontSize: 16 }}>Serving Size: {meal.servingSize}</Text>
+        <Text style={{ color: "#475569", marginTop: 10, fontWeight: 600, fontSize: 15 }}>Serving Size: {meal.servingSize}</Text>
         <TouchableOpacity onPress={() => handleLogMeal(meal)} style={styles.logButton} >
           <Text style={{ color: "#fefefe", fontSize: 18, fontWeight: 600 }}>+ Log this meal</Text>
         </TouchableOpacity>
@@ -129,7 +129,7 @@ const styles = StyleSheet.create({
   logButton: {
     marginTop: 20,
     alignItems: "center",
-    paddingVertical: 20,
+    paddingVertical: 15,
     elevation: 1,
     borderRadius: 10,
     backgroundColor: "#10b77f",
@@ -143,7 +143,7 @@ const styles = StyleSheet.create({
     paddingVertical: 5
   },
   nutritionText: {
-    fontSize: 15,
+    fontSize: 13,
     fontWeight: 600
   }
 })

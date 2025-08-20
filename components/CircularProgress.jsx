@@ -22,7 +22,7 @@ const CircularProgress = ({ type, totalIntake, goals }) => {
 	return (
 		<View>
 			<AnimatedCircularProgress
-				size={150}
+				size={140}
 				width={9}
 				fill={displayFill} // percentage filled
 				tintColor= {setColor()}

@@ -72,7 +72,7 @@ const HomeMain = ({ navigation }) => {
 				<View style={styles.calories}>
 					<View style={{ display: "flex", flexDirection: "row", justifyContent: "space-between", alignItems: "center", marginBottom: 10 }}>
 						<Text style={{ fontSize: 20, fontWeight: 600 }}>Calories</Text>
-						<Text style={{ fontSize: 18, fontWeight: 600, color: "grey" }}> {Math.round(totalIntake.calories * 100) / 100}/{goals.calories} kCal</Text>
+						<Text style={{ fontSize: 18, fontWeight: 600, color: "grey" }}> {Math.round(totalIntake.calories * 100) / 100}/{goals.calories} KCal</Text>
 					</View>
 					<HorizontalProgress intake={totalIntake.calories} kcalGoal={goals.calories} />
 					<View style={{ display: "flex", flexDirection: "row-reverse", marginTop: 10 }}>
@@ -141,7 +141,7 @@ const styles = StyleSheet.create({
 		margin: 20,
 		backgroundColor: "#fefefe",
 		borderRadius: 10,
-		padding: 20,
+		padding: 15,
 		elevation: 3,
 	},
 	macros: {
@@ -149,7 +149,7 @@ const styles = StyleSheet.create({
 		backgroundColor: "#fefefe",
 		elevation: 3,
 		borderRadius: 10,
-		padding: 20,
+		padding: 15,
 
 	},
 	button: {

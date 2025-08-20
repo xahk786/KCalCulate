@@ -1,11 +1,12 @@
 import { useContext, useState } from 'react'
-import { Alert, ScrollView, StatusBar, StyleSheet, Text, TextInput, TouchableOpacity, View } from 'react-native'
+import { Alert, Image, ScrollView, StatusBar, StyleSheet, Text, TextInput, TouchableOpacity, View } from 'react-native'
 import { auth } from '../firebase';
 import { createUserWithEmailAndPassword, sendEmailVerification, signInWithEmailAndPassword } from 'firebase/auth'
 import { AppContext } from '../components/AppContext';
 import { createUserDb } from '../firebaseStorage';
 import { SafeAreaView } from 'react-native-safe-area-context';
 import { saveToAsyncStorage } from '../asyncStorage';
+import { Icon } from 'react-native-paper';
 
 const Authscreen = () => {
 	const [isLogin, setIsLogin] = useState(true);
@@ -65,6 +66,7 @@ const Authscreen = () => {
 				showsVerticalScrollIndicator={false}
 				keyboardShouldPersistTaps="handled">
 				<View style={styles.content}>
+					<Image source={require('../assets/icon.png')} style={{width: 70, height: 70, borderRadius: 50}}/>
 					<View style={styles.appBranding}>
 						<Text style={styles.brandText}>KCalCulate</Text>
 						<Text style={styles.sloganText}>Track your nutrional goals with ease</Text>

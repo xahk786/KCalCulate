@@ -144,7 +144,7 @@ const Search = () => {
 							</View>
 						</View>
 
-						<Text style={{ fontSize: 15, fontWeight: 600, marginTop: 10 }}>Serving size: {food.serving}</Text>
+						<Text style={{ color: "#475569", fontSize: 15, fontWeight: 600, marginTop: 10 }}>Serving size: {food.serving}</Text>
 						<TouchableOpacity onPress={() => handleLogFood(food)} style={styles.logButton}>
 							<Text style={{ color: "#fefefe", fontSize: 16, fontWeight: 600 }}>+ Log this food</Text>
 						</TouchableOpacity>

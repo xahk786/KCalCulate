@@ -92,35 +92,35 @@ const Create = () => {
     <SafeAreaView style={{ flex: 1 }}>
       <ScrollView showsVerticalScrollIndicator={false}>
         <View style={{ margin: 20, backgroundColor: "#10b77f", padding: 20, borderRadius: 10, elevation: 3 }}>
-          <Text style={{ fontSize: 25, fontWeight: "600", color: "white" }}>Create Custom Meal</Text>
+          <Text style={{ fontSize: 20, fontWeight: "600", color: "white" }}>Create Custom Meal</Text>
           <Text style={{ fontSize: 16, marginTop: 10, color: "white", fontWeight: "500" }}>Enter macronutrients manually</Text>
         </View>
 
         <View style={styles.createCard}>
           <View style={{ marginTop: 0, gap: 30 }}>
             <View>
-              <Text style={{ fontSize: 20, fontWeight: 800, marginBottom: 10 }}>Meal Name</Text>
+              <Text style={{ fontSize: 16, fontWeight: 800, marginBottom: 10 }}>Meal Name</Text>
               <TextInput value={meal.mealName} onChangeText={(text) => handleChangeText("mealName", text)} placeholder='Enter meal name...' placeholderTextColor="#94a3b8" style={styles.input}></TextInput>
             </View>
 
             <View>
-              <Text style={{ fontSize: 20, fontWeight: 800, marginBottom: 10 }}>Serving Size</Text>
+              <Text style={{ fontSize: 16, fontWeight: 800, marginBottom: 10 }}>Serving Size</Text>
               <TextInput value={meal.servingSize} onChangeText={(text) => handleChangeText("servingSize", text)} placeholder='e.g per 200g...' placeholderTextColor="#94a3b8" style={styles.input}></TextInput>
             </View>
 
             <View style={{ flexDirection: "row", justifyContent: "space-between", gap: 20 }}>
               <View style={{ flex: 1 }}>
-                <Text style={{ fontSize: 20, fontWeight: 800, marginBottom: 10 }}>Protein (g)</Text>
+                <Text style={{ fontSize: 16, fontWeight: 800, marginBottom: 10 }}>Protein (g)</Text>
                 <TextInput onChangeText={(text) => handleChangeNumber("protein", text)} value={meal.protein} keyboardType="numeric" placeholder='0' placeholderTextColor="#94a3b8" style={styles.input}></TextInput>
               </View>
 
               <View style={{ flex: 1 }}>
-                <Text style={{ fontSize: 20, fontWeight: 800, marginBottom: 10 }}>Carbs (g)</Text>
+                <Text style={{ fontSize: 16, fontWeight: 800, marginBottom: 10 }}>Carbs (g)</Text>
                 <TextInput onChangeText={(text) => handleChangeNumber("carbs", text)} value={meal.carbs} keyboardType="numeric" placeholder='0' placeholderTextColor="#94a3b8" style={[styles.input]}></TextInput>
               </View>
 
               <View style={{ flex: 1 }}>
-                <Text style={{ fontSize: 20, fontWeight: 800, marginBottom: 10 }}>Fats (g)</Text>
+                <Text style={{ fontSize: 16, fontWeight: 800, marginBottom: 10 }}>Fats (g)</Text>
                 <TextInput onChangeText={(text) => handleChangeNumber("fats", text)} value={meal.fats} keyboardType="numeric" placeholder='0' placeholderTextColor="#94a3b8" style={styles.input}></TextInput>
               </View>
             </View>
@@ -150,8 +150,8 @@ const styles = StyleSheet.create({
     borderWidth: 1,
     borderRadius: 10,
     backgroundColor: "#f9fafb",
-    padding: 16,
-    fontSize: 16
+    padding: 10,
+    fontSize: 14
   },
   button: {
     marginTop: 30,

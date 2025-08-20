@@ -46,29 +46,29 @@ const Goals = () => {
 			<View style={styles.spacerHeader} />
 			<ScrollView showsVerticalScrollIndicator={false}>
 				<View style={{ margin: 20, backgroundColor: "#10b77f", padding: 20, borderRadius: 10, elevation: 3 }}>
-					<Text style={{ fontSize: 25, fontWeight: "600", color: "white" }}>Set Daily Targets</Text>
+					<Text style={{ fontSize: 20, fontWeight: "600", color: "white" }}>Set Daily Targets</Text>
 					<Text style={{ fontSize: 16, marginTop: 10, color: "white", fontWeight: 500 }}>Edit calorie goals and macro distribution manually</Text>
 				</View>
 				<View style={styles.editGoalsContainer}>
 					<View>
-						<Text style={{ fontSize: 20, fontWeight: 600, marginBottom: 20 }}>Daily Calories (kCal)</Text>
+						<Text style={{ fontSize: 16, fontWeight: 800, marginBottom: 20 }}>Daily Calories (KCal)</Text>
 						<TextInput onChangeText={(text) => handleChangeNumber("calories", text)} value={goalTemp.calories.toString()} style={styles.input} placeholderTextColor="#94a3b8" placeholder="0"></TextInput>
 					</View>
 				</View>
 
 				<View style={[styles.editGoalsContainer]}>
-					<Text style={{ fontSize: 20, fontWeight: 600 }}>Macronutrient Distribution (%)</Text>
+					<Text style={{ fontSize: 16, fontWeight: 800 }}>Macronutrient Distribution (%)</Text>
 					<View style={{ flexDirection: "row", justifyContent: "space-between", gap: 10 }}>
 						<View style={{ flex: 1 }}>
-							<Text style={{ fontSize: 20, fontWeight: 600, marginBottom: 20, textAlign: "center" }}>Protein</Text>
+							<Text style={{ fontSize: 16, fontWeight: 800, marginBottom: 20, textAlign: "center" }}>Protein</Text>
 							<TextInput onChangeText={(text) => handleChangeNumber("protein", text)} value={goalTemp.protein.toString()} style={styles.input} placeholderTextColor="#94a3b8" placeholder="0"></TextInput>
 						</View>
 						<View style={{ flex: 1 }}>
-							<Text style={{ fontSize: 20, fontWeight: 600, marginBottom: 20, textAlign: "center" }}>Carbs</Text>
+							<Text style={{ fontSize: 16, fontWeight: 800, marginBottom: 20, textAlign: "center" }}>Carbs</Text>
 							<TextInput onChangeText={(text) => handleChangeNumber("carbs", text)} value={goalTemp.carbs.toString()} style={styles.input} placeholderTextColor="#94a3b8" placeholder="0"></TextInput>
 						</View>
 						<View style={{ flex: 1 }}>
-							<Text style={{ fontSize: 20, fontWeight: 600, marginBottom: 20, textAlign: "center" }}>Fats</Text>
+							<Text style={{ fontSize: 16, fontWeight: 800, marginBottom: 20, textAlign: "center" }}>Fats</Text>
 							<TextInput onChangeText={(text) => handleChangeNumber("fats", text)} value={goalTemp.fats.toString()} style={styles.input} placeholderTextColor="#94a3b8" placeholder="0"></TextInput>
 						</View>
 					</View>
@@ -117,8 +117,8 @@ const styles = StyleSheet.create({
 		borderWidth: 1,
 		borderRadius: 10,
 		backgroundColor: "#f9fafb",
-		fontSize: 16,
-		padding: 16
+		fontSize: 14,
+		padding: 10
 	},
 	editGoalsContainer: {
 		margin: 20,

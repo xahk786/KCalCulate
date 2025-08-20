@@ -49,8 +49,8 @@ const ViewLoggedMeals = () => {
     return loggedMeals.map((meal, mealIndex) => (
       <View key={mealIndex} style={{ margin: 20, backgroundColor: "#fefefe", borderRadius: 10, padding: 20, elevation: 3 }}>
         <View style={{ flexDirection: "row", flexWrap:"wrap", justifyContent: "space-between", alignItems: "center", borderWidth: 0 }}>
-          <Text style={{ fontSize: 20, fontWeight: 600 }}>{meal.mealName}</Text>
-          <Text style={{ color: "#475569", fontSize: 16, fontWeight: 600 }}><Icon size={16} source={"calendar-blank"} /> {meal.time}</Text>
+          <Text style={{ fontSize: 16, fontWeight: 800 }}>{meal.mealName}</Text>
+          <Text style={{ color: "#475569", fontSize: 15, fontWeight: 500 }}><Icon size={16} source={"calendar-blank"} /> {meal.time}</Text>
         </View>
 
         <View style={{ flexDirection: "row", marginTop: 20, gap: 3, flexWrap: "wrap" }}>
@@ -108,7 +108,7 @@ const styles = StyleSheet.create({
   unlogButton: {
     marginTop: 20,
     alignItems: "center",
-    paddingVertical: 20,
+    paddingVertical: 15,
     elevation: 1,
     borderRadius: 10,
     backgroundColor: "#f84e4eff",
@@ -122,7 +122,7 @@ const styles = StyleSheet.create({
     paddingVertical: 5
   },
   nutritionText: {
-    fontSize: 15,
+    fontSize: 13,
     fontWeight: 600
   }
 })
